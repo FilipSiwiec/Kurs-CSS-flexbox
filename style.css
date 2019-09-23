@@ -5,34 +5,33 @@
     margin: 0 auto;
 }
 
-.flex-container{
+.body{
+    background: #eee;
+    color: #333;
+
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+
+}
+
+#blocks{
     display: flex;
-    background: #fff;
-    flex-wrap: wrap;
-    flex-flow: column;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-}
-
-.box{
-    width: 100px;
-   flex: 0 0 100px;
+    margin: 10px;
+    justify-content: space-between;
     
 }
 
-.one{
-    background: red;
-
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ccc;
 }
 
-.two{
-    background: blue;
-    
-}
-
-.three{
-    background: green;
-    
- 
-}
+.one{order: 0;}
+.two{order: 2;}
+.three{order: 1;}
+.four{order: 3;}
